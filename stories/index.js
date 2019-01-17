@@ -11,9 +11,16 @@ const Button = ({ children, onClick }) => (
 )
 
 Button.propTypes = {
-  children: PropTypes.node,
-  onClick: PropTypes.func
-}
+  /**
+    Label for the button.
+  */
+  children: PropTypes.string,
+
+  /**
+    Triggered when clicked on the button.
+  */
+  onClick: PropTypes.func,
+};
 
 storiesOf('Button')
   .addDecorator(withSmartKnobs)
